@@ -1,0 +1,32 @@
+[package]
+name = "wordle_game"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+gstd = {workspace = true}
+io = {workspace = true}
+
+[build-dependencies]
+gear-wasm-builder = {workspace = true}
+io = {workspace = true}
+
+[dev-dependencies]
+gtest = {workspace = true}
+gclient = {workspace = true}
+tokio = {workspace = true}
+session_io = {path = "session_game/session_io"}
+
+[workspace]
+members = ["session_game"]
+
+[workspace.dependencies]
+gstd = "1.3.0"
+gmeta = "1.3.0"
+gear-wasm-builder = "1.3.0"
+gtest = "1.3.0"
+gclient = "1.3.0"
+io = { path = "io"}
+tokio = "1"
+xshell = "0.2"
+anyhow = "1"

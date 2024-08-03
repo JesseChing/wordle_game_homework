@@ -1,0 +1,19 @@
+[package]
+name = "session_game"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+gstd = {workspace = true}
+session_io = {path = "session_io"}
+io = {workspace = true}
+
+[build-dependencies]
+gear-wasm-builder = {workspace = true}
+session_io = {path = "session_io"}
+
+[dev-dependencies]
+session_io = {path = "session_io"}
+gtest = {workspace = true}
+gclient = {workspace = true}
+tokio = {workspace = true}
